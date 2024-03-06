@@ -7,11 +7,7 @@ const client = MixinApi({ keystore });
 // Use async await
 async function getMe() {
   const me = await client.user.profile();
-  console.log(`name is ${me.app.name}.`);
-  console.log(`app_id is ${me.app.app_id}.`)
-  console.log(`app_number is ${me.app.app_number}.`)
-  console.log(`description is ${me.app.description}.`)
-  console.log(`creator_id is ${me.app.creator_id}.`)
+  console.log(`name:${me.app.name} \napp_id:${me.app.app_id} \napp_number:${me.app.app_number} \ndescription:${me.app.description} \ncreator_id:${me.app.creator_id}`)
 }
 
 getMe()   
